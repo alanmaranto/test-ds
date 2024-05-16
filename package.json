@@ -1,0 +1,46 @@
+{
+  "name": "bc-ui",
+  "private": false,
+  "version": "0.0.0",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/bc-ui.umd.cjs",
+  "module": "./dist/bc-ui.js",
+  "exports": {
+    ".": {
+      "import": "./dist/bc-ui.js",
+      "require": "./dist/bc-ui.umd.cjs"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "prebuild": "rm -rf dist",
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "@typescript-eslint/eslint-plugin": "^7.2.0",
+    "@typescript-eslint/parser": "^7.2.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.6",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0"
+  },
+  "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
+  "directories": {
+    "lib": "lib"
+  },
+  "author": "alan-maranto",
+  "license": "MIT"
+}
