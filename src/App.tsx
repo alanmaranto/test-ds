@@ -1,7 +1,7 @@
 import { Button } from "bc-ui";
 
 function App() {
-  return <Button>123as</Button>;
+  return <Button onClick={() => alert('hola')}>BC Button</Button>;
 }
 
 export default App;
